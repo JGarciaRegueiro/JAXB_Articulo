@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<inventario>
+    <articulos>
+        <articulo>
+            <descripcion>descripcion1</descripcion>
+            <id>0</id>
+            <nombre>articulo1</nombre>
+            <stock>1</stock>
+        </articulo>
+        <articulo>
+            <descripcion>descripcion2</descripcion>
+            <id>0</id>
+            <nombre>articulo2</nombre>
+            <stock>2</stock>
+        </articulo>
+        <articulo>
+            <descripcion>descripcion3</descripcion>
+            <id>0</id>
+            <nombre>articulo3</nombre>
+            <stock>3</stock>
+        </articulo>
+    </articulos>
+</inventario>
