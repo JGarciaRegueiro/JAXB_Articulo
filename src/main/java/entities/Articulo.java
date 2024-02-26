@@ -1,8 +1,14 @@
 package entities;
 
-import java.util.ArrayList;
-import java.util.List;
 
+import javax.xml.bind.annotation.XmlType;
+
+@XmlType(propOrder = {
+		"id",
+	    "nombre",
+	    "descripcion",
+	    "stock",
+	})
 public class Articulo{
 
 	private int id;

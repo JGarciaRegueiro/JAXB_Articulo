@@ -2,21 +2,21 @@
 <inventario>
     <articulos>
         <articulo>
-            <descripcion>descripcion1</descripcion>
             <id>0</id>
             <nombre>articulo1</nombre>
+            <descripcion>descripcion1</descripcion>
             <stock>1</stock>
         </articulo>
         <articulo>
-            <descripcion>descripcion2</descripcion>
             <id>0</id>
             <nombre>articulo2</nombre>
+            <descripcion>descripcion2</descripcion>
             <stock>2</stock>
         </articulo>
         <articulo>
-            <descripcion>descripcion3</descripcion>
             <id>0</id>
             <nombre>articulo3</nombre>
+            <descripcion>descripcion3</descripcion>
             <stock>3</stock>
         </articulo>
     </articulos>
