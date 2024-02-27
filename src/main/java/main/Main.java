@@ -7,6 +7,7 @@ import java.util.List;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
+import javax.xml.bind.Unmarshaller;
 
 import entities.Articulo;
 import entities.ArticuloDao;
@@ -42,6 +43,24 @@ public class Main {
 			
 		} catch (JAXBException e) {
 			System.out.println("Error convertiendo el objeto a formato XML");
+			e.printStackTrace();
+		}
+		
+		Unmarshaller u;
+		
+		try {
+			u = context.createUnmarshaller();
+			
+			File file = new File("articulos.xml");
+			if(file.exists()) {
+				Object o = u.unmarshal(file);
+				ArticuloDao result = (ArticuloDao) o;
+				System.out.println(">" + result.toString());
+			} else {
+				System.err.println("No se ha encontrado el archivo");
+			}
+			
+		} catch(JAXBException e) {
 			e.printStackTrace();
 		}
 	}

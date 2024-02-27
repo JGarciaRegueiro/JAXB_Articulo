@@ -29,4 +29,11 @@ public class ArticuloDao {
 	    this.listaArticulos = articulos;
 	}
 
+	@Override
+	public String toString() {
+		return "ArticuloDao [listaArticulos=" + listaArticulos + "]";
+	}
+
+	
+	
 }
